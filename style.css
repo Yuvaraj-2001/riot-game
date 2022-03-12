@@ -1,0 +1,334 @@
+body{
+    margin: 0px;
+
+}
+@font-face {
+    font-family: "Deadpool";
+    src: url("deadpool-outline-font/DeadpoolOutline-Yw4L.ttf");
+    /* src: url("deadpool-outline-font/sansation_light.woff")  format('woff'); */
+}
+
+.header-container{
+    background: #1F2326;
+    padding: 15px 5% 15px 5%;
+}
+.item-container{
+    
+}
+.item-flex{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.item-logo-home{
+    display: flex;
+    padding-right: 5%;
+}
+.riot-icon{
+    padding-right: 15px;
+    border-right: 5px solid #fff;
+}
+.riot-logo{
+    padding-left: 15px;
+}
+.nav-text{
+    padding: 0px 15px 0px 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.riot-img{
+    
+}
+.profile{
+    position: absolute;
+    /* float: right; */
+    right: 10%;
+    top: 14px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.agent-conatainer-flex{
+    width: 169px;
+    display: flex;
+    /* background-color: yellow; */
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.agent-con-background{
+    background-image: url("images/background.svg");
+}
+.agents-container{
+    
+    background: #ff0016a8;
+    padding: 0% 5% 0% 5%;
+    height: 1000px;
+    padding-top: 50px;
+}
+.left-arrow{
+    height: 150px;
+    padding-right: 20px;
+}
+.agent-heading{
+    width: 94px;
+    /* height: 158px; */
+    display: flex;
+    color: white;
+    /* background-color: yellow; */
+    -ms-transform: rotate(20deg);
+    transform: rotate(90deg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Deadpool";
+    font-size: 180px;
+}
+.agent-card{
+    display: flex;
+    background: beige;
+    margin-left: 20px;
+    /* width: 50%; */
+    margin-right: 20px;
+    position: relative;
+}
+.agent-description{
+    width: 100px;
+    font-size: 66px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -42px;
+    top: 52px;
+    color: white;
+    z-index: 1;
+
+}
+.agent-profile-section{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+}
+.right-arrow{
+    height: 150px;
+    transform: rotate(180deg);
+}
+.agent-card-heading{
+    color: #ff4656;
+    font-size: 30px;
+    margin-left: 0px;
+    margin-bottom: -25px;
+}
+.agent-name{
+    font-family: "Deadpool";
+    font-size: 82px;
+}
+.character-art-div{
+    position: relative;
+}
+.character-art-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    border-top: 22px solid #f14957;
+    border-right: 21px solid black;
+    width: 0;
+}
+.character-art{
+    width: 250px;
+    background: black;
+}
+.perks{
+    position: absolute;
+    display: flex;
+    bottom: -13px;
+    background: #1f2326;
+    padding: 0px;
+    border: 2px solid white;
+    right: -12px;
+    align-items: center;
+}
+.agents-subContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.perkArt{
+  
+    width: 25px;
+    padding: 10px;
+}
+.select-btn{
+    position: absolute;
+    padding: 3px 15%;
+    font-family: "Deadpool";
+    border: 1px solid #fff;
+    background: #000000;
+    color: #fff;
+    bottom: -15%;
+    font-size: 40px;
+}
+.menu-icon{
+    height: 30px;
+}
+.nav-text {
+    display: none;
+}
+
+@media (min-width: 200px) and (max-width: 539px) { 
+  .profile{
+      display: none;
+   }
+    .menu-icon{
+        height: 30px;
+    }
+    .menu-conatiner{
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 23px;
+    }
+    .item-flex{
+        justify-content: space-around;
+    }
+ 
+    .right-arrow {
+        height: 50px;
+    }
+    .left-arrow {
+        height: 50px;
+    }
+    .character-art {
+        width: 170px;
+        background: black;
+    }
+    .agent-card-heading {
+        color: #ff4656;
+        font-size: 20px;
+        margin-left: 0px;
+        margin-bottom: -14px;
+    }
+    .agent-heading {
+        font-size: 50px;
+    }
+    .agent-name {
+        font-family: "Deadpool";
+        font-size: 55px;
+    }
+}
+@media (min-width: 250px) and (max-width: 787px) { 
+    .agent-heading {
+        width: 0px;
+       
+    }
+    .left-arrow {
+        height: 100px;
+    }
+    .right-arrow{
+        height: 100px;
+    }
+    .menu-icon{
+        height: 30px;
+    }
+    .menu-conatiner{
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 23px;
+    }
+    .agent-profile-section{
+        width: 100%;
+    }
+    .menu-conatiner span{
+        padding-left: 12px;
+        font-family: "Deadpool";
+        font-weight: 600;
+    }
+    .select-btn{
+        bottom: -22%;
+    }
+
+
+    @media (min-width: 250px) and (max-width: 429px) { 
+        .agent-heading {
+            font-size:70px;
+        }
+        .right-arrow {
+            height: 50px;
+        }
+        .left-arrow {
+            height: 50px;
+        }
+        .character-art {
+            width: 170px;
+            background: black;
+        }
+        .agents-container {
+            background: #ff0016a8;
+            padding: 0% 8% 0% 2%;
+        }
+        .agent-conatainer-flex {
+            width: 70%;
+        }
+        .menu-conatiner span {
+            display: none;
+        }
+        .menu-icon {
+            height: 25px;
+        }
+       
+    }
+    @media (min-width: 430px) and (max-width: 787px) { 
+        .agent-heading {
+            font-size: 100px;
+        }
+    }
+    .agent-heading{
+        display: block;
+        transform: rotate(0deg);
+    }
+    .agents-subContainer {
+        flex-direction: column;
+    }    
+   
+}
+@media (min-width: 788px) and (max-width: 1023px) { 
+    .menu{
+        display: block;
+        
+    }
+    .menu-conatiner{
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 23px;
+    }
+    .menu-conatiner span{
+        padding-left: 12px;
+        font-family: "Deadpool";
+        font-weight: 600;
+    }
+    .menu-icon{
+        height: 30px;
+    }
+    .nav-text {
+        display: none;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) { 
+    .nav-text {
+        padding: 0px 10px 0px 15px;
+    }
+    .profile {
+        right: 2%;
+    }
+    .menu{
+        display: none;
+    }
+    .nav-text {
+        display: block;
+    }
+}
+ 
